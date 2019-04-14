@@ -6,7 +6,7 @@ fx = open('info.txt', 'w')
 
 focus = [83, 127, 838, 476, 689, 179, 842, 830]
 
-for i in focus:  # range(1, 863):
+for i in range(1, 863):  # focus:
     
     url = 'http://t.dramastar.org/'+str(i)+'.html'
     res = urllib.request.urlopen(url, timeout=10)
